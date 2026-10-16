@@ -77,15 +77,15 @@ header nav a {
 
 
 header nav a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: var(--fiery-terracotta);
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--fiery-terracotta);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
 }
 
 header nav a:hover::after,
@@ -154,8 +154,8 @@ header nav a.active {
 }
 
 .container-icon-hero{
-  width: 30px;
-  height:30px;
+  width: 20px;
+  height:20px;
   overflow: hidden;
 
 }
@@ -194,6 +194,10 @@ header nav a.active {
   object-fit: cover;
 }
 
+.title-2{
+  text-align: center;
+  margin-bottom: 30px;
+}
 
 .cards-container {
   display: grid;
@@ -250,9 +254,6 @@ header nav a.active {
   background-color: var(--gunmetal);
 }
 
-#title-skills {
-  text-align: center;
-}
 
 .icons-container {
   display: flex;
@@ -263,8 +264,8 @@ header nav a.active {
 }
 
 .icon{
-  width: 150px;
-  height:150px;
+  width: 120px;
+  height:120px;
   overflow: hidden;
 
 
@@ -278,8 +279,8 @@ header nav a.active {
 
 
 #about-me {
-  padding: 80px 0;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 
@@ -287,7 +288,6 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 20px;
   padding: 40px 0;
@@ -295,7 +295,22 @@ footer {
   border-top: 1px solid var(--fiery-terracotta);
   margin-top: 60px;
 }
+
+footer p {
+  color: var(--gunmetal);
+  font-size: 1.2rem;
+  font-style: italic;
+  text-decoration: none;
+}
+
+
+#icon-footer{
+  display: flex;
+  gap: 10px;
+
+}
 .container-icon-footer{
+  display: flex;
   width: 20px;
   height:20px;
   overflow: hidden;
@@ -306,14 +321,6 @@ footer {
   height: 100%;
   object-fit: contain
 
-}
-
-
-footer p {
-  color: var(--gunmetal);
-  font-size: 1.2rem;
-  font-style: italic;
-  text-decoration: none;
 }
 
 
