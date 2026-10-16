@@ -7,12 +7,12 @@
   --transition: all 0.3s ease;
 }
 
-body.dark-mode {
-  --background: #121212;
-  --gunmetal: #f0f0f0; 
-  --card-bg: #1e1e1e;
-  --card-text: #b0b0b0;
+[data-theme="dark"] {
+  --background: #181a1b;
+  --gunmetal: #f6f7ebff; 
+  --card-bg: #242729;    
 }
+
 
 * {
   margin: 0;
@@ -98,18 +98,27 @@ header nav a.active {
     font-weight: 600;
 }
 
+
 #theme-toggle {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.2rem;
-  color: var(--gunmetal);
   padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: var(--transition);
 }
 
 #theme-toggle:hover {
-  color: var(--fiery-terracotta);
+  transform: scale(1.1);
+}
+
+
+#theme-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 
@@ -168,7 +177,7 @@ header nav a.active {
 
 
 #contact-hero a {
-  color: #121212;
+  color: var(--gunmetal);
   font-size: 1rem;
   font-style: italic;
   transition: var(--transition);
@@ -210,10 +219,12 @@ header nav a.active {
 .card {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--card-bg);
+  color: var(--gunmetal);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .card-image {
