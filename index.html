@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png"/>
     <link rel="stylesheet" href="style.css">
 
 
 </head>
 <body>
     <header>
-        <a href="index.html">
-        <h1>Yuliana</h1>
-        </a>
         <nav>
             <ul>
-                <a href="index.html" ></a>
                 <a href="index.html" class="active">Inicio</a>
                 <a href="#Projects">Proyectos</a>
                 <a href="#Skills">Skills</a>
                 <a href="#about-me">Sobre mi</a>
-                <a href="#resume">Resumen</a>
+
             </ul>
 
             <button id="theme-toggle" aria-label="switch dark/light mode">  
@@ -31,12 +28,11 @@
     <main>
         <section id="hero">
             <div id="hero-text">
-                <span>Desarrollo de software</span>
+                <span>Desarrollo backend</span>
                 <h2 id="title-hero">Yuliana Quintero</h2>
 
-                <p id="text">
-                    Soy desarrolladora backend, creo soluciones de software enfocadas en 
-                    las necesidades de los usuarios
+                <p class="text">
+                    Ayudo a crear soluciones de software enfocadas en las necesidades de los usuarios.
                 </p>
             </div>
             
@@ -58,7 +54,7 @@
                 </div>
 
                  <div class="container-icon-hero">
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="/docs/CV_Yuliana_Quintero.pdf" target="_blank" rel="noopener noreferrer">
                         <img src="./img/cv.png" alt="icon cv">
                     </a>
                 </div>
@@ -67,12 +63,10 @@
 
         </section>
 
-        <section id="Projects" 
+        <section id="Projects">
 
             <div class="title-2">
-                <h2 >
-                    Proyectos
-                </h2>
+                <h2>Proyectos</h2>
             </div>
             <div class="cards-container">
                 <div class="card">
@@ -130,36 +124,43 @@
         </section>
 
         <section id="about-me">
-            <div>
-                <h2 class="title-2">
-                    Educación
-                </h2>
-            </div>
-            <div class="education">
-                <p>Generation Colombia 09/2026 - En curso</p>
-                <h3>Desarrollador fullstack Java </h3>
-            </div>
-            <div class="education">
-                <p>Servicio Nacional de Apredizaje SENA, Virtual  04/2025 - En curso</p>
-                <h3>Tecnólogo en Análisis y Desarrollo de Software</h3>
-            </div>
-            <div class="education">
-                <p>Talento Tech   04/2025 </p>
-                <h3>Programación nivel básico</h3>
+            <div  class="title-2">
+                <h2>Sobre mi</h2>
             </div>
 
+            <div>  
+                <p class="about-description">
+                    Soy desarrolladora backend, estudiante de Tecnólogo en Análisis y Desarrollo de Software (SENA). 
+                    Cuento con experiencia en el desarrollo de proyectos del lado del servidor, en los que he aplicado 
+                    tecnologías como Python, Java, Flask y el manejo de bases de datos relacionales como MySQL y no relacionales como MongoDB. 
+                    Me caracterizo por trabajar en equipo, resolución de problemas y orientación al cliente.
+
+                </p>
+            </div>
+
+            <div class="subtitle">
+                <h3>Educación</h3>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <time datetime="07-09-2026">09/2026 - En curso</time>
+                    <h3>Desarrollador fullstack Java </h3>
+                    <p>Generation Colombia </p>
+                </div>
+                <div class="timeline-item">
+                    <time datetime="25-04-2025">  04/2025 - En curso</time>
+                    <h3>Tecnólogo en Análisis y Desarrollo de Software</h3>
+                    <p>Servicio Nacional de Apredizaje SENA, Virtual</p>
+                </div>
+                <div class="timeline-item">
+                    <time datetime="12-03-2025">08-2025</time>
+                    <h3>Programación nivel básico</h3>
+                    <p>Talento Tech </p>
+                </div>
+            </div>  
 
         </section>
 
-        <section id="Resume">
-            <div>
-                <h2 class="title-2">
-                    Resumen
-                </h2>
-            </div>
-
-
-        </section>
 
     </main>
 
