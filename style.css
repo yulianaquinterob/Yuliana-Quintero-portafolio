@@ -8,9 +8,9 @@
 }
 
 [data-theme="dark"] {
-  --background: #181a1b;
+  --background: #020617;
   --gunmetal: #f6f7ebff; 
-  --card-bg: #242729;    
+  --card-bg: #0b1422;    
 }
 
 [data-theme="dark"] #contact-hero img,
@@ -259,7 +259,7 @@ header nav a.active {
 }
 
 .card:hover{
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.2);
   
 
