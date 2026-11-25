@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="theme-color" content="#020617">
+    <title>Yuliana - Backend Developer</title>
     <link rel="icon" type="image/png" href="./img/favicon.png"/>
     <link rel="stylesheet" href="style.css">
 
@@ -20,8 +21,8 @@
 
             </ul>
 
-            <button id="theme-toggle" aria-label="switch dark/light mode">  
-                <img id="theme-icon" src="./img/luna-creciente.png" alt="Icono de luna">
+            <button id="theme-toggle" type="button" aria-label="Cambiar a modo claro" aria-pressed="false" title="Cambiar a modo claro">
+                <img id="theme-icon" src="./img/modo-claro.png" alt="Icono para cambiar a modo claro">
             </button>
         </nav>
     </header>
@@ -33,29 +34,31 @@
 
                 <p class="text">
                     Ayudo a crear soluciones de software enfocadas en las necesidades de los usuarios.
+                    Cuento con experiencia en el desarrollo de proyectos del lado del servidor, en los que he aplicado tecnologías como Python, 
+                    Java, Flask y el manejo de bases de datos relacionales como MySQL y no relacionales como MongoDB. 
                 </p>
             </div>
             
             <div id="image-container" >
-                <img src="./img/perfil.png"  alt="imagen de Yuliana">
+                <img src="./img/perfil.png" alt="imagen de Yuliana" title="Yuliana Quintero">
             </div>
 
             <div id="contact-hero">
                 <div class="container-icon-hero">
-                    <a href="https://www.linkedin.com/in/yuliana-quintero-buitrago" target="_blank" rel="noopener noreferrer">
-                        <img src="./img/github.png" alt="icono github">
+                    <a href="https://github.com/yulianaquinterob" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/github.png" alt="icono github" title="Ver GitHub">
                     </a>
                 </div>
                 
                  <div class="container-icon-hero">
-                    <a href="https://github.com/yulianaquinterob" target="_blank" rel="noopener noreferrer">
-                        <img src="./img/linkedin.png" alt="icono linkedin">
+                    <a href="https://www.linkedin.com/in/yuliana-quintero-buitrago" target="_blank" rel="noopener noreferrer ">
+                        <img src="./img/linkedin.png" alt="icono linkedin" title="Ver LinkedIn">
                     </a>
                 </div>
 
                  <div class="container-icon-hero">
-                    <a href="/docs/CV_Yuliana_Quintero.pdf" target="_blank" rel="noopener noreferrer">
-                        <img src="./img/cv.png" alt="icon cv">
+                    <a href="./docs/CV_Yuliana_Quintero.pdf" target="_blank" rel="noopener noreferrer" type="application/pdf">
+                        <img src="./img/cv.png" alt="cv " title="Abrir CV">
                     </a>
                 </div>
                 <a href="mailto:yulianaquinterob5@gmail.com">yulianaquinterob5@gmail.com</a>
@@ -68,34 +71,65 @@
             <div class="title-2">
                 <h2>Proyectos</h2>
             </div>
-            <div class="cards-container">
-                <div class="card">
-                    <img src="" alt="Imagen 1" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">proyecto 1</h3>
-                    <p class="card-text">Descripción breve del proyecto.</p>
-                    <button class="card-button">Ver más</button>
+            <div class="project-showcases">
+                <article class="project-showcase">
+                    <div class="project-info">
+                        <p class="project-eyebrow">01 / E-commerce</p>
+                        <h3>Aguacate Makeup</h3>
+                        <p class="project-description">
+                            Proyecto de comercio electrónico para la comercialización de maquillaje.
+                        </p>
+                        <a class="project-back-link" href="">Ver detalles</a>
                     </div>
-                </div>
 
-                <div class="card">
-                    <img src="" alt="Imagen 1" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">proyecto 1</h3>
-                    <p class="card-text">Descripción breve del proyecto.</p>
-                    <button class="card-button">Ver más</button>
+                    <div class="project-preview project-carousel" role="region" aria-label="Imágenes de Aguacate Makeup">
+                        <div class="project-preview-header">
+                            <span class="preview-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                            <span>aguacate-makeup / vista previa</span>
+                            <span aria-hidden="true">◇</span>
+                        </div>
+                        <img class="project-carousel-slide" src="./img/aguacate-makeup.png" alt="Vista previa del proyecto Aguacate Makeup">
+                        <img class="project-carousel-slide" src="./img/Captura de pantalla 2026-11-24 231323.png"alt="Descripción de la imagen"hidden>
+                        <div class="project-preview-footer">
+                            <span>Vista previa del proyecto</span>
+                            <div class="project-carousel-controls">
+                                <button class="carousel-control" type="button" data-carousel-prev aria-label="Imagen anterior" disabled>&larr;</button>
+                                <span class="carousel-count" data-carousel-count aria-live="polite" aria-label="Posición de la imagen">1 / 1</span>
+                                <button class="carousel-control" type="button" data-carousel-next aria-label="Imagen siguiente" disabled>&rarr;</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="card">
-                    <img src="" alt="Imagen 1" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">proyecto 1</h3>
-                    <p class="card-text">Descripción breve del proyecto.</p>
-                    <button class="card-button">Ver más</button>
+                <article class="project-showcase">
+                    <div class="project-info">
+                        <p class="project-eyebrow">02 / Planificador</p>
+                        <h3>Flujo</h3>
+                        <p class="project-description">
+                            Planificador de tareas para organizar actividades.
+                        </p>
+                        <a class="project-back-link" href="">Ver detalles</a>
                     </div>
-                </div>
+
+                    <div class="project-preview project-carousel" role="region" aria-label="Imágenes de Flujo">
+                        <div class="project-preview-header">
+                            <span class="preview-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                            <span>flujo / vista previa</span>
+                            <span aria-hidden="true">◇</span>
+                        </div>
+                        <img class="project-carousel-slide" src="./img/planificador.png" alt="Vista previa del planificador de tareas Flujo">
+                        <div class="project-preview-footer">
+                            <span>Vista previa del proyecto</span>
+                            <div class="project-carousel-controls">
+                                <button class="carousel-control" type="button" data-carousel-prev aria-label="Imagen anterior" disabled>&larr;</button>
+                                <span class="carousel-count" data-carousel-count aria-live="polite" aria-label="Posición de la imagen">1 / 1</span>
+                                <button class="carousel-control" type="button" data-carousel-next aria-label="Imagen siguiente" disabled>&rarr;</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
+
         </section>
 
         <section id="Skills" >
@@ -105,19 +139,19 @@
 
             <div class="icons-container">
                 <div class="icon">
-                    <img src="./img/java.png" alt="icono java">
+                    <img src="./img/java.png" alt="icono java" title="Java">
                 </div>
 
                 <div class="icon">
-                    <img src="./img/mongodb.png" alt="icono mongodb">
+                    <img src="./img/mongodb.png" alt="icono mongodb" title="MongoDB">
                 </div>
 
                 <div class="icon">
-                    <img src="./img/python.png" alt="icono python">
+                    <img src="./img/python.png" alt="icono python" title="Python">
                 </div>
                 
                 <div class="icon">
-                    <img src="./img/mysql.png" alt="icono mysql">
+                    <img src="./img/mysql.png" alt="icono mysql" title="MySQL">
                 </div>
 
             </div>
@@ -130,10 +164,9 @@
 
             <div>  
                 <p class="about-description">
-                    Soy desarrolladora backend, estudiante de Tecnólogo en Análisis y Desarrollo de Software (SENA). 
-                    Cuento con experiencia en el desarrollo de proyectos del lado del servidor, en los que he aplicado 
-                    tecnologías como Python, Java, Flask y el manejo de bases de datos relacionales como MySQL y no relacionales como MongoDB. 
-                    Me caracterizo por trabajar en equipo, resolución de problemas y orientación al cliente.
+                    Soy desarrolladora backend, con formación en Tecnólogo en Análisis y Desarrollo de Software. 
+                    Durante mi formación he participado en el desarrollo de un proyecto de gestión de reservas hoteleras, 
+                    fortaleciendo mis habilidades en programación, desarrollo de aplicaciones y resolución de problemas.
 
                 </p>
             </div>
@@ -150,7 +183,7 @@
                 <div class="timeline-item">
                     <time datetime="25-04-2025">  04/2025 - En curso</time>
                     <h3>Tecnólogo en Análisis y Desarrollo de Software</h3>
-                    <p>Servicio Nacional de Apredizaje SENA, Virtual</p>
+                    <p>Servicio Nacional de Apredizaje SENA - Virtual</p>
                 </div>
                 <div class="timeline-item">
                     <time datetime="12-03-2025">08-2025</time>
@@ -172,13 +205,13 @@
         <div id="icon-footer">
             <div class="container-icon-footer">
                 <a href="https://www.linkedin.com/in/yuliana-quintero-buitrago" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/linkedin.png" alt="icono linkedin">
+                    <img src="./img/linkedin.png" alt="icono linkedin" title="Ver LinkedIn">
                 </a>
             </div>
 
             <div class="container-icon-footer">
                 <a href="https://github.com/yulianaquinterob" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/github.png" alt="icono github">
+                    <img src="./img/github.png" alt="icono github" title="Ver GitHub">
                 </a>
             </div>
         </div>
